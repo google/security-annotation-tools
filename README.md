@@ -2,6 +2,12 @@
 
 This is a plugin for [errorprone](https://errorprone.info/) for checking REST APIs and common issues with API systems, as well as to allow the engineers to play around with certain concepts that are beneficial in that space. 
 
+Plans for this plugin include:
+
+* JAX-RS patterns
+* AIP patterns
+* Taint checking and related patterns
+* Various security patterns, especially relating to the [OWASP API Security Top 10](https://owasp.org/www-project-api-security/).
 
 ## Source Code Headers
 
