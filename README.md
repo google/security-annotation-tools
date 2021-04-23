@@ -9,6 +9,18 @@ Plans for this plugin include:
 * Taint checking and related patterns
 * Various security patterns, especially relating to the [OWASP API Security Top 10](https://owasp.org/www-project-api-security/).
 
+This is not an officially supported Google product, nor is it an official extension to Error Prone. This is 100% a side project.
+
+## Building
+
+In order to build the system, simply use the gradle wrapper:
+
+```
+./gradlew
+```
+
+This will build the system, run tests, enforce policies, etc.
+
 ## Source Code Headers
 
 Every file containing source code must include copyright and license
@@ -16,18 +28,4 @@ information. This includes any JS/CSS files that you might be serving out to
 browsers. (This is to help well-intentioned people avoid accidental copying that
 doesn't comply with the license.)
 
-Apache header:
-
-    Copyright 2021 Google LLC
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        https://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+This is the standard Apache header and can be found in `license_header.txt`. 
