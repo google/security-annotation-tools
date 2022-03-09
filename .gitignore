@@ -1,19 +1,32 @@
-# Ignore Gradle project-specific cache directory
+# Gradle
+
+## Gradle project-specific cache directories
 .gradle
 **/build/
 !src/**/build/
 
-# Ignore Gradle GUI config
+## Gradle GUI config
 gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+## Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 
-# Cache of project
+## Cache of project
 .gradletasknamecache
 
-# Ignore Gradle build output directory
+## Ignore Gradle build output directory
 build
+
+# Compressed Packages
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.rar
+*.tar
+*.zip
+*.tgz
 
 # IntelliJ
 
@@ -22,26 +35,27 @@ build
 *.iws
 out/
 
-
-# Gradle/IntelliJ
+## Gradle/IntelliJ
 .idea/artifacts
 .idea/compiler.xml
 .idea/jarRepositories.xml
 .idea/modules.xml
 .idea/*.iml
 .idea/modules
+.idea/**/gradle.xml
+.idea/**/libraries
 
-# IntelliJ User-specific stuff
+## IntelliJ User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
 
-# IntelliJ Generated files
+## IntelliJ Generated files
 .idea/**/contentModel.xml
 
-# IntelliJ Sensitive or high-churn files
+## IntelliJ Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -50,6 +64,57 @@ out/
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+## Local VS Code history directory
+.history/
+
+## Compiled VS plugins
+*.vsix
+
+## Ignore VS Code Plugin Output Directories
+**/bin
+!src/**/bin/
+
+# Java
+
+hs_err_pid*
+replay_pid*
+*.class
+
+## Log Files
+*.log
+!src/test/resources/**/*.log
+
+## Java Package Files
+
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Linux
+
+## Backups and hidden temporary files
+*~
+
+## Temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+## KDE directory preferences
+.directory
+
+## Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+## .nfs files are created when an open file is removed but is still being accessed
+.nfs*

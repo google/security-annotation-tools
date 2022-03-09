@@ -7,16 +7,16 @@
  * in the user manual at https://docs.gradle.org/6.8.2/userguide/multi_project_builds.html
  */
 
-rootProject.name = "errorprone-rest-plugin"
+rootProject.name = "security-annotation-tools"
 
 include("parent")
 include("plugin")
 include("test")
 
 pluginManagement {
-  repositories {
-      google()
-      gradlePluginPortal()
-      mavenCentral()
-  }
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
 }

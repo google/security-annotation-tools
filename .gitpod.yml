@@ -1,0 +1,26 @@
+tasks:
+    - init: ./gradlew
+      command: ./gradlew build
+github:
+    prebuilds:
+        master: true
+        branches: true
+image:
+    file: .gitpod.Dockerfile
+vscode:
+    extensions:
+        - esbenp.prettier-vscode
+        - ilkka.google-java-format
+        - k--kato.intellij-idea-keybindings
+        - mathiasfrohlich.Kotlin
+        - ms-azuretools.vscode-docker
+        - redhat.java
+        - redhat.vscode-xml
+        - richardwillis.vscode-gradle
+        - TabNine.tabnine-vscode
+        - vscjava.vscode-java-debug
+        - vscjava.vscode-java-dependency
+        - vscjava.vscode-java-pack
+        - vscjava.vscode-java-test
+        - vscjava.vscode-maven
+        - zxh404.vscode-proto3

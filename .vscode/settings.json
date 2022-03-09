@@ -1,0 +1,71 @@
+{
+    "[java]": {
+        "editor.defaultFormatter": "ilkka.google-java-format",
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80, 100
+    ] /* The polite limit and the hard limit for most purposes. */,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "google-java-format.executable-path": "/home/linuxbrew/.linuxbrew/bin/google-java-format",
+    "gradle.nestedProjects": true,
+    "java.autobuild.enabled": true,
+    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+    "java.codeGeneration.useBlocks": true,
+    "java.completion.favoriteStaticMembers": [
+        "java.nio.charset.StandardCharsets.*",
+        "java.util.Objects.*",
+        "com.google.common.base.Preconditions.*",
+        "com.google.common.base.Predicates.*",
+        "org.assertj.core.api.Assertions.*",
+        "org.assertj.guava.api.Assertions.*",
+        "org.assertj.core.api.Assumptions.*",
+        "org.mockito.Answers.*",
+        "org.mockito.ArgumentMatchers.*",
+        "org.mockito.Mockito.*"
+    ],
+    "java.completion.filteredTypes": [
+        "com.sun.*",
+        "java.awt.*",
+        "javafx.*",
+        "javax.swing.*",
+        "jdk.jfr.internal.*",
+        "jdk.nashorn.internal.*",
+        "org.checkerframework.checker.*",
+        "org.checkerframework.common.*",
+        "org.checkerframework.framework.*",
+        "sun.*"
+    ] /* Some use cases will require these, but they also show up far far more
+         often than they are needed. */,
+    "java.completion.importOrder": ["#", ""],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.comments.enabled": true,
+    "java.import.gradle.enabled": true,
+    "java.import.gradle.offline.enabled": false,
+    "java.import.gradle.wrapper.enabled": true,
+    "java.project.outputPath": "build",
+    "java.project.sourcePaths": ["src"],
+    "java.server.launchMode": "Standard",
+    "prettier.configPath": ".prettierrc.yml",
+    "tabnine.disable_file_regex": [
+        "[.]md$",
+        "[.]txt$",
+        "[.]Dockerfile$",
+        "^\\.[a-z]$",
+        "^[\\w-]+$"
+    ] /* Tabnine's usefulness declines dramatically on plain text and custom formats. */,
+    "tabnine.experimentalAutoImports": true
+}
