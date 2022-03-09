@@ -1,0 +1,17 @@
+# No need to go into generated files
+build
+bin
+
+.git/
+
+.gradle
+gradle/
+gradlew
+gradlew.bat
+
+generated/
+
+# These have their own formats which are different from prettier's
+*.kts
+*.kt
+*.java
