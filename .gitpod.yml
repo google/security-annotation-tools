@@ -1,6 +1,22 @@
 tasks:
-    - init: ./gradlew
-      command: ./gradlew build
+    - name: "Startup"
+      # First stop all gradle daemons that are (probably) stale.
+      # Then, without initializing the caches, start one daemon and ensure
+      # that the basic script startup works.
+      before: |
+          ./gradlew --stop
+          ./gradlew --no-configuration-cache --rerun-tasks
+          gp sync-done daemon_stop
+      # For the prebuild we want it to work even if there are spotless problems
+      # and we'll see those in the branch when we log in.
+      init: ./gradlew spotlessApply build
+      # Now remove any extant configuration cache due to a persistent issue
+      # with spotless (see https://github.com/diffplug/spotless/issues/987).
+      # Then we can do a quick build and be done.
+      command: |
+          rm -rf .gradle/configuration-cache
+          gp sync-done confcache_removed
+          ./gradlew build
 github:
     prebuilds:
         master: true

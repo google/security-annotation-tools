@@ -1,9 +1,8 @@
-import com.diffplug.gradle.spotless.SpotlessExtension
 import config.LibVersions
 
 apply(plugin = "com.diffplug.spotless")
 
-configure<SpotlessExtension> {
+configure<com.diffplug.gradle.spotless.SpotlessExtension> {
     java {
         removeUnusedImports()
         googleJavaFormat(LibVersions.Build.javaFormat)

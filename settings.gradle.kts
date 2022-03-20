@@ -9,6 +9,7 @@
 
 rootProject.name = "security-annotation-tools"
 
+include("annotations")
 include("parent")
 include("plugin")
 include("test")

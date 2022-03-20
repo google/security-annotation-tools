@@ -35,7 +35,9 @@
         "org.assertj.core.api.Assumptions.*",
         "org.mockito.Answers.*",
         "org.mockito.ArgumentMatchers.*",
-        "org.mockito.Mockito.*"
+        "org.mockito.Mockito.*",
+        "org.junit.jupiter.api.DynamicContainer.*",
+        "org.junit.jupiter.api.DynamicTest.*"
     ],
     "java.completion.filteredTypes": [
         "com.sun.*",
@@ -57,15 +59,23 @@
     "java.import.gradle.offline.enabled": false,
     "java.import.gradle.wrapper.enabled": true,
     "java.project.outputPath": "build",
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": ["src", "build/generated/sources"],
     "java.server.launchMode": "Standard",
+    "java.signatureHelp.enabled": true,
     "prettier.configPath": ".prettierrc.yml",
     "tabnine.disable_file_regex": [
         "[.]md$",
         "[.]txt$",
         "[.]Dockerfile$",
-        "^\\.[a-z]$",
-        "^[\\w-]+$"
+        "[.]properties$",
+        "[\\/]?\\.[a-z]+$",
+        "[\\/]?[\\w-]+$"
     ] /* Tabnine's usefulness declines dramatically on plain text and custom formats. */,
+    "tabnine.disable_line_regex": [
+        "\\/\\*[\\*]?\\s*",
+        "^\\s+\\*",
+        "\\/\\/",
+        "\\#"
+    ] /* Also documentation. */,
     "tabnine.experimentalAutoImports": true
 }

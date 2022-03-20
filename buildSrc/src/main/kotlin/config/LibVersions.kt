@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Google LLC
+ * Copyright 2021-2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,14 @@ package config
 
 object LibVersions {
 
-    const val autoService = "1.0"
+    const val autoFactory = "1.2.1"
+    const val autoService = "1.0.1"
+    const val autoValue = "1.9"
+    const val checkerFramework = "3.21.3"
+    const val flogger = "0.7.4"
+    const val gson = "2.9.0"
     const val guava = "31.1-jre"
+    const val protobuf = "3.19.4"
 
     object Build {
         const val errorprone = "2.11.0"
@@ -30,6 +36,7 @@ object LibVersions {
     object Test {
         const val assertj = "3.22.0"
         const val assertjGuava = "3.4.0"
-        const val junit = "4.13.2"
+        const val junit5 = "5.8.2"
+        const val mockito = "4.4.0"
     }
 }
