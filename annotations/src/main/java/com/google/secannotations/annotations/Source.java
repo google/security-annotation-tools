@@ -1,5 +1,5 @@
 /*
- * Copyright 2021-2021 Google LLC
+ * Copyright 2021-2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,19 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.errorprone.plugin.rest;
+package com.google.secannotations.annotations;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-import com.google.errorprone.matchers.Description;
-import org.junit.jupiter.api.Test;
-
-public class CustomCheckTest {
-
-  @Test
-  public void matchMethodInvocation_returnsNoMatch() {
-    CustomCheck check = new CustomCheck();
-
-    assertThat(check.matchMethodInvocation(null, null)).isEqualTo(Description.NO_MATCH);
-  }
-}
+/** An output source/gateway, marking the upper edge or source for the security type checks. */
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD})
+public @interface Source {}
