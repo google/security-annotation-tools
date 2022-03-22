@@ -1,10 +1,11 @@
-repositories {
-    google()
-    mavenCentral()
-}
-
 plugins {
     `kotlin-dsl`
+}
+
+repositories {
+    gradlePluginPortal()
+    google()
+    mavenCentral()
 }
 
 java {
@@ -13,5 +14,6 @@ java {
 }
 
 dependencies {
-    implementation("com.diffplug.spotless:spotless-plugin-gradle:6.3.0")
+    implementation(buildLibs.bundles.spotless)
+    implementation(buildLibs.bundles.errorprone)
 }

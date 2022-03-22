@@ -59,7 +59,11 @@
     "java.import.gradle.offline.enabled": false,
     "java.import.gradle.wrapper.enabled": true,
     "java.project.outputPath": "build",
-    "java.project.sourcePaths": ["src", "build/generated/sources"],
+    "java.project.sourcePaths": [
+        "src",
+        "build/generated/sources",
+        "build/generated-sources"
+    ],
     "java.server.launchMode": "Standard",
     "java.signatureHelp.enabled": true,
     "prettier.configPath": ".prettierrc.yml",

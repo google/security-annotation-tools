@@ -1,5 +1,8 @@
-import config.LibVersions
+plugins {
+    id("sectypes.java.min")
+}
 
 dependencies {
-    api("com.google.guava:guava:${LibVersions.guava}")
+    api(libs.bundles.logging.slf4j)
+    api(libs.google.guava.core)
 }

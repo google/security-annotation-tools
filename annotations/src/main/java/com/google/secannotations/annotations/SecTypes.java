@@ -21,7 +21,6 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import javax.annotation.meta.TypeQualifier;
 
 /** A collection of security types bound together with a relatioship. */
 @Documented
@@ -34,7 +33,6 @@ import javax.annotation.meta.TypeQualifier;
   ElementType.TYPE_PARAMETER
 })
 @Inherited
-@TypeQualifier
 public @interface SecTypes {
   /** The set of one or more security types. Order is irrelevant. */
   SecType[] value() default {};

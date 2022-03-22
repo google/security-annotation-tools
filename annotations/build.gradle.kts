@@ -1,9 +1,7 @@
-import config.LibVersions
+plugins {
+    id("sectypes.java.lib")
+}
 
 dependencies {
-    implementation(project(":parent"))
-    implementation("org.checkerframework:checker:${LibVersions.checkerFramework}")
-    implementation("org.checkerframework:checker-qual:${LibVersions.checkerFramework}")
-
-    testImplementation(project(":test"))
+    implementation(libs.bundles.checker.framework)
 }
