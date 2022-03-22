@@ -21,7 +21,6 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import javax.annotation.meta.TypeQualifier;
 
 /**
  * Indicates that the method converts between one security type and another. Requires that all types
@@ -37,5 +36,4 @@ import javax.annotation.meta.TypeQualifier;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
 @Inherited
-@TypeQualifier
 public @interface SecurityTypeFunction {}

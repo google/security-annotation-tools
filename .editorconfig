@@ -1,0 +1,6 @@
+[*.{kt,kts}]
+insert_final_newline = true
+ij_kotlin_imports_layout = *,|,^
+ktlint_ignore_back_ticked_identifier = false
+insert_final_newline = true
+indent_size = 4

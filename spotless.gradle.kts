@@ -29,6 +29,8 @@ configure<com.diffplug.gradle.spotless.SpotlessExtension> {
         endWithNewline()
     }
 
+    val prettierConfig by extra("$rootDir/.prettierrc.yml")
+
     /*
      * Our use cases generally have order-independent keys, which lets us make
      * them alphabetical.  Also everything is in "JSON with Comments" and not
@@ -42,18 +44,18 @@ configure<com.diffplug.gradle.spotless.SpotlessExtension> {
             mapOf(
                 "prettier-plugin-sort-json" to LibVersions.Build.prettierSortJson
             )
-        ).configFile("$rootDir/.prettierrc.yml")
+        ).configFile(prettierConfig)
     }
 
     format("markdown") {
         target("**/*.md", "*.md")
 
-        prettier().configFile("$rootDir/.prettierrc.yml")
+        prettier().configFile(prettierConfig)
     }
 
     format("yaml") {
         target("**/*.yaml", "**/*.yml", "*.yaml", "*.yml")
 
-        prettier().configFile("$rootDir/.prettierrc.yml")
+        prettier().configFile(prettierConfig)
     }
 }

@@ -22,7 +22,6 @@ import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import javax.annotation.meta.TypeQualifier;
 
 /** A security type containing both a category and some number of tags. */
 @Documented
@@ -36,7 +35,6 @@ import javax.annotation.meta.TypeQualifier;
 })
 @Repeatable(value = SecTypes.class)
 @Inherited
-@TypeQualifier
 public @interface SecType {
   /** The classification for the security type. */
   Category category();
